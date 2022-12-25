@@ -1,0 +1,354 @@
+/* main side bar div start */
+
+.sidebar-menu {
+    display: block;
+    position: fixed;
+    overflow: hidden;
+    height: 100vh;
+    width: 60%;
+    top: 0;
+    right: -100%;
+    background:var(--sidebar-f3-color);
+    z-index: 99;
+    transition: all cubic-bezier(0.77, 0.31, 0.2, 0.59) .4s;
+}
+
+.active-sidebar{
+right: -2%;
+}
+
+.main-sidebar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* main side bar div end */
+
+/* text animation css start*/
+.sidehead {
+    background: var(--main-color);
+    padding: 1.4rem;
+    margin-left: -5rem;
+}
+
+.sidehead img {
+    width: 6%;
+}
+.animate-gradient-text {
+	background-image: linear-gradient(120deg, #1cdce8, #bb77ed, #f34a62);
+	background-size: 200%;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	animation: animated-gradient 5s ease-in-out infinite;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-left: 2.5rem;
+}
+
+@keyframes animated-gradient {
+	0%,
+	100% {
+		background-position: 0 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+}
+
+/* text animation css end*/
+
+/* cursor hover animation start */
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    float: left;
+    padding-left: 6.5rem;
+  }
+
+  .contentp-0{
+    padding-left: 0;
+  }
+  
+  .bttns {
+    cursor: pointer;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    float: left;
+    margin: 10px;
+  }
+  
+
+.navlink3div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 7rem;
+}
+
+
+h3.title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 31px;
+    color:var(--main-color);
+    animation: animated-gradient 5s ease-in-out infinite;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+}
+
+section.content a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--main-color);
+    text-decoration: none;
+    padding-bottom: 0.7rem;
+}
+
+/* .emial-div-sidebar {
+    padding-top: 3rem;
+} */
+
+a.email-a-side {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+/* cursor hover animation start */
+
+
+
+/* blog start */
+
+.blog-heading>h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 62px;
+}
+.blog-heading {
+    padding: 3rem 0 3rem 13rem;
+}
+
+p.Btitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 31px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding: 1rem 0;
+}
+
+p.date-blog {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 1rem;
+    color: var(--secondary-8f-color);
+}
+
+p.date-blog::before{
+    position: absolute;
+    content: "";
+    margin: auto;
+    width: 2rem;
+    height: 3px;
+    background-color: var(--secondary-8f-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1rem;
+
+}
+
+.blog-img-div {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.blog-img-div .animation-blog-layer {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s;
+}
+
+.blog-img-div:hover .animation-blog-layer {
+    transform: translateY(100%);
+}
+
+.blog-img-div img:hover {
+    transform: scale(1.1);
+}
+
+.blog-img-div .blog-img {
+    transition: all .3s;
+}
+
+/* blog end */
+
+
+/* news latter start */
+
+.news-div {
+    /* background: var(--secondary-8f-color); */
+    background: #F1F1F1;
+    padding: 5rem;
+    margin-top: 10rem;
+}
+
+h3.news-h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 50px;
+    color: #000000;
+}
+
+.contact-foo {
+    padding-top: 5rem;
+    white-space: nowrap;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+}
+
+button.news-submit-foo {
+    outline: none;
+    border: none;
+    color:var(--primary-color);
+    background: var(--primary-blue-bg);
+    padding: 0.6rem 1rem;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 31px;
+    letter-spacing: -0.02em;
+}
+
+.foo-input {
+    padding-right: 0.7rem;
+}
+
+input.foo-name {
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    background: var(--secondary-d9-color);
+    padding: 0.7rem;
+    border-radius: 0;
+}
+
+.input-foo1 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.input-foo2 {
+    grid-column: 4/7;
+    grid-row: 1/2;
+}
+
+.input-foo3 {
+    grid-column: 7/10;
+    grid-row: 1/2;
+}
+
+/* news latter end */
+
+/* footer style start */
+
+.footer-section {
+    background: #000;
+    padding: 4rem 3rem;
+    margin-top: 5rem;
+}
+
+
+.logo-div {
+    width: 20rem;
+}
+
+ul.foo-head-link {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.logoSide{
+    position: relative;
+    height: 100%;   
+}
+
+.header-foo-links.pad-left-foo {
+    padding-left: 4rem;
+}
+
+li.li-foo-link {
+    padding-bottom: 1.5rem;
+    list-style: none;
+}
+
+a.li-a-foo {
+    color: var(--primary-color);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 31px;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+}
+
+
+a.li-a-foo:hover {
+    color: var(--primary-color);
+}
+
+p.copy-text {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10%;
+    left: 2%;
+}
+
+a.copy-link {
+    text-decoration: none;
+    font-weight: 900;
+    padding-left: 0.5rem;
+}
+/* footer style end */
